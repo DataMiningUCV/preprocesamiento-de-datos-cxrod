@@ -18,3 +18,8 @@ sudo pip install numpy
    - data.csv: datos de entrada para script.py
    - informe.pdf: explicación de todas las decicines tomadas para generar la vista minable
    - explicacion.pdf: explicación del set de datos 
+
+## Autor
+
+Cesar J Rodriguez
+V-21306130
