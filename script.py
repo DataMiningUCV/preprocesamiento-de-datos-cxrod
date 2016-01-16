@@ -8,10 +8,10 @@ Created on Wed Jan 13 11:50:16 2016
 import csv as csv 
 import numpy as np
 import re
-#import os
+import os
 
-#os.getcwd()
-#os.chdir("../Escritorio")
+os.getcwd()
+os.chdir("../Escritorio/preprocesamiento-de-datos-cxrod")
 
 csv_file_object = csv.reader(open('data.csv', 'rb')) 
 header = csv_file_object.next()
@@ -135,15 +135,10 @@ for row in estadoCivil:
     if re.search("soltero", row):
         estadoCivilTemp.append(0)
         continue
-    if re.search("casado", row):
-        estadoCivilTemp.append(1)
-        continue
     if re.search("viudo", row):
         estadoCivilTemp.append(2)
         continue
-    if re.search("unido", row):
-        estadoCivilTemp.append(3)
-        continue
+     estadoCivilTemp.append(1)
 estadoCivil = np.array(estadoCivilTemp)
 data[0::,5] = estadoCivil  
     
