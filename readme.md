@@ -15,7 +15,6 @@ sudo pip install numpy
 
    - script.py: script en python que genera la vista minable
    - minable.csv: propuesta de vista minable generada por script.py
-   - data.csv: datos de entrada para script.py
    - informe.pdf: explicación de todas las decicines tomadas para generar la vista minable
    - explicacion.pdf: explicación del set de datos 
 
